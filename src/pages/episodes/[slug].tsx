@@ -63,7 +63,7 @@ export default function Episode({episode}: episodeProps) {
 export const getStaticPaths: GetStaticPaths = async () => {
   const {data} = await api.get('episodes', {
     params: {
-      _limit: 12,
+      _limit: 2,
       _sort: 'published_at',
       _order: 'desc',
     }
