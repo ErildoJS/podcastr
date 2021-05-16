@@ -40,6 +40,7 @@ export function Player() {
         <strong>Tocando agora</strong>
       </header>
 
+      {/**se a variavel nao estiver nula exibo as info , se estiver exibo as info staticas */}
       {episode ? (
         <div className={styles.currentEpisode}>
           <Image width={592} height={592} src={episode.thumbnail} objectFit="cover"/>

@@ -3,14 +3,14 @@ import {createContext, ReactNode, useState} from 'react'
 type Episode = {
   title: string;
   members: string;
-  thumbnail: string;
+  thumbnail: string; 
   duration: number;
   url: string;
 }
 
 type PlayerContextData = {
-  episodeList: Episode[];
-  currentEpisodeIndex: number;//indice do episodio actual tocando
+  episodeList: Episode[];//uma lista de episodios
+  currentEpisodeIndex: number;//indice da posicao do episodio actual tocando
   isPlaying: boolean;
   playing: (episode: Episode) => void;
   playList: (list: Episode[], index: number) => void
